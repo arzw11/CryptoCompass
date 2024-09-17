@@ -1,0 +1,20 @@
+{% load compass_tags %}
+
+<div class="container">
+  <div class="crypto-list">
+    <h2>CryptoCompass</h2>
+    {% get_coin_list as coins %}
+    <ul>
+      {% for coin in coins %}
+      <li>
+        <a href="{% url "currency" coin.slug %}"
+          ><img
+            src="https://s2.coinmarketcap.com/static/img/coins/64x64/{{ coin.id }}.png"
+            alt="{{ coin.symbol }}"
+          />{{ coin.name }} ({{ coin.symbol }})</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

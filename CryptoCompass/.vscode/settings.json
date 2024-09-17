@@ -1,0 +1,17 @@
+{
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.importFormat": "absolute",
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "Django",
+            "depth": 3,
+            "includeAllSymbols": true
+        },
+    ]
+}

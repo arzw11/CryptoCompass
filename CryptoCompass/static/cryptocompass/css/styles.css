@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.container h1{
+    color: black;
+}
+
+.crypto-list {
+    width: 250px; /* Ширина панели */
+    height: 100vh; /* Высота панели */
+    background-color: #f4f4f4; /* Цвет фона */
+    padding: 20px;
+    position: fixed; /* Фиксированное положение */
+    overflow-y: auto; /* Прокрутка по вертикали */
+}
+
+.crypto-list h2 {
+    margin-top: 0;
+}
+
+.crypto-list ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+.crypto-list li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Разделитель между элементами */
+}
+.crypto-list a {
+    display: flex; /* Позволяет использовать flexbox для выравнивания */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    text-decoration: none;
+    color: black;
+    width: 100%; /* Заставляет ссылку занимать всю ширину li */
+    padding: 10px; /* Добавляем внутренние отступы для кликабельной области */
+}
+
+.crypto-list img {
+    width: 20%;
+    margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+.crypto-list li:hover {
+    background-color: #e0e0e0; /* Цвет фона при наведении */
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.main p {
+    font-size: 20px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: seagreen;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.card-body {
+    padding: 15px;
+}
+.card-body h2 {
+    margin: 0 0 10px 0;
+}
+.card-body p {
+    margin: 5px 0;
+}

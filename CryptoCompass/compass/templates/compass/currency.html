@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block sidebar %}
+{% include "compass/includes/sidebar.html" %}
+{% endblock  %}
+
+{% block content %}
+<div class="content">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/{{ coin.id }}.png" alt="{{ coin.symbol }}">
+            <h2>{{ coin.name }} ({{ coin.symbol }})</h2>
+        </div>
+        <div class="card-body">
+            <p><strong>Курс:</strong> $ {{ coin.quote.USD.price|floatformat:2 }}</p>
+            <p><strong>Изменение за день:</strong> {{ coin.quote.USD.percent_change_24h }}</p>
+            <p><strong>Рынок:</strong> $ {{ coin.quote.USD.market_cap }}</p>
+        </div>
+    </div>
+</div>
+{% endblock  %}
