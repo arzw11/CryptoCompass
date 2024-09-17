@@ -14,8 +14,8 @@
         </div>
         <div class="card-body">
             <p><strong>Курс:</strong> $ {{ coin.quote.USD.price|floatformat:2 }}</p>
-            <p><strong>Изменение за день:</strong> {{ coin.quote.USD.percent_change_24h }}</p>
-            <p><strong>Рынок:</strong> $ {{ coin.quote.USD.market_cap }}</p>
+            <p><strong>Изменение за день:</strong> {{ coin.quote.USD.percent_change_24h|floatformat:2 }}</p>
+            <p><strong>Рынок:</strong> $ {{ coin.quote.USD.market_cap|floatformat:0 }}</p>
         </div>
     </div>
 </div>
